@@ -1,7 +1,7 @@
-from selenium import webdriver
+from selenium import webdriver1
  
 
-driver = webdriver.Edge()
+driver1 = webdriver1.Edge()
 # file name should start with test_
 # class name should start with Test_
 # testcases should start with  test_
@@ -28,13 +28,13 @@ class Test_Credence_001:
             assert False
 
     def test_CredenceUrl_002(self):
-        driver = webdriver.Edge()
-        driver.get("https://credence.in/")
-        if driver.title == "Credence":
+        driver1 = webdriver1.Edge()
+        driver1.get("https://credence.in/")
+        if driver1.title == "Credence":
             print("You are at credence.in")
             assert True
-            driver.close()
+            driver1.close()
         else:
             print("You are at Wrong url")
-            driver.close()
+            driver1.close()
             assert False
